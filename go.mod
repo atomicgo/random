@@ -1,3 +1,3 @@
-module atomicgo.dev/template
+module atomicgo.dev/random
 
-go 1.18
+go 1.21
