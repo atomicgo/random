@@ -1,16 +1,17 @@
 package random_test
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
 	"math"
 	"testing"
+
+	"atomicgo.dev/random"
 )
 
 func ExampleInt() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	var min, max = 0, math.MaxInt
+	min, max := 0, math.MaxInt
 	res := random.Int(min, max)
 
 	fmt.Println(res)
@@ -54,6 +55,7 @@ func ExampleIntSliceUnique() {
 	fmt.Println(s)
 	// Output: [39 79 100 52 17 49 95 22 84 50]
 }
+
 func ExampleUint() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 

@@ -1,8 +1,11 @@
 package random_test
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func ExampleBool() {

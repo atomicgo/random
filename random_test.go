@@ -1,9 +1,10 @@
 package random_test
 
 import (
-	"atomicgo.dev/random"
 	"os"
 	"testing"
+
+	"atomicgo.dev/random"
 )
 
 func TestMain(m *testing.M) {
