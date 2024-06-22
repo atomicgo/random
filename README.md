@@ -156,8 +156,9 @@ Bool returns a random boolean.
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -199,8 +200,9 @@ BoolSlice returns a slice of random booleans. If count is less than 0, BoolSlice
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -239,8 +241,9 @@ Entries returns a slice of n random elements from a slice. If n is less than 0, 
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -279,8 +282,9 @@ EntriesUnique returns a slice of n unique random elements from a slice. If n is 
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -319,8 +323,9 @@ Entry returns a random element from a slice.
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -359,9 +364,10 @@ Float32 returns a random float32 between min and max, inclusive. If min \> max, 
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
 	"math"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -401,8 +407,9 @@ Float32Slice returns a slice of random float32s between min and max, inclusive. 
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -441,8 +448,9 @@ Float32SliceUnique returns a slice of unique random float32s between min and max
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -481,9 +489,10 @@ Float64 returns a random float64 between min and max, inclusive. If min \> max, 
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
 	"math"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -523,8 +532,9 @@ Float64Slice returns a slice of random float64s between min and max, inclusive. 
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -563,8 +573,9 @@ Float64SliceUnique returns a slice of unique random float64s between min and max
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -603,15 +614,16 @@ Int returns a random integer between min and max, inclusive. If min \> max, Int 
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
 	"math"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	var min, max = 0, math.MaxInt
+	min, max := 0, math.MaxInt
 	res := random.Int(min, max)
 
 	fmt.Println(res)
@@ -645,9 +657,10 @@ Int16 returns a random int16 between min and max, inclusive. If min \> max, Int1
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
 	"math"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -687,8 +700,9 @@ Int16Slice returns a slice of random int16s between min and max, inclusive. If m
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -727,8 +741,9 @@ Int16SliceUnique returns a slice of unique random int16s between min and max, in
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -767,9 +782,10 @@ Int32 returns a random int32 between min and max, inclusive. If min \> max, Int3
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
 	"math"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -809,8 +825,9 @@ Int32Slice returns a slice of random int32s between min and max, inclusive. If m
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -849,8 +866,9 @@ Int32SliceUnique returns a slice of unique random int32s between min and max, in
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -889,9 +907,10 @@ Int64 returns a random int64 between min and max, inclusive. If min \> max, Int6
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
 	"math"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -931,8 +950,9 @@ Int64Slice returns a slice of random int64s between min and max, inclusive. If m
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -971,8 +991,9 @@ Int64SliceUnique returns a slice of unique random int64s between min and max, in
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1011,9 +1032,10 @@ Int8 returns a random int8 between min and max, inclusive. If min \> max, Int8 p
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
 	"math"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1053,8 +1075,9 @@ Int8Slice returns a slice of random int8s between min and max, inclusive. If min
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1093,8 +1116,9 @@ Int8SliceUnique returns a slice of unique random int8s between min and max, incl
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1133,8 +1157,9 @@ IntSlice returns a slice of random integers between min and max, inclusive. If m
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1173,8 +1198,9 @@ IntSliceUnique returns a slice of unique random integers between min and max, in
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1213,8 +1239,9 @@ Probability returns true with a probability of p. 1 = 100%; 0.5 = 50%; 0 = 0% If
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1286,8 +1313,9 @@ Shuffle returns a shuffled copy of a slice.
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1326,8 +1354,9 @@ String returns a random string of length l, using the characters in the set. If 
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1365,8 +1394,9 @@ StringSlice returns a slice of random strings of length l, using the characters 
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1405,9 +1435,10 @@ Uint returns a random uint between min and max, inclusive. If min \> max, Uint w
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
 	"math"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1447,9 +1478,10 @@ Uint16 returns a random uint16 between min and max, inclusive. If min \> max, Ui
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
 	"math"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1489,8 +1521,9 @@ Uint16Slice returns a slice of random uint16s between min and max, inclusive. If
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1529,8 +1562,9 @@ Uint16SliceUnique returns a slice of unique random uint16s between min and max, 
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1569,9 +1603,10 @@ Uint32 returns a random uint32 between min and max, inclusive. If min \> max, Ui
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
 	"math"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1611,8 +1646,9 @@ Uint32Slice returns a slice of random uint32s between min and max, inclusive. If
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1651,8 +1687,9 @@ Uint32SliceUnique returns a slice of unique random uint32s between min and max, 
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1691,9 +1728,10 @@ Uint64 returns a random uint64 between min and max, inclusive. If min \> max, Ui
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
 	"math"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1733,8 +1771,9 @@ Uint64Slice returns a slice of random uint64s between min and max, inclusive. If
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1773,8 +1812,9 @@ Uint64SliceUnique returns a slice of unique random uint64s between min and max, 
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1813,9 +1853,10 @@ Uint8 returns a random uint8 between min and max, inclusive. If min \> max, Uint
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
 	"math"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1855,8 +1896,9 @@ Uint8Slice returns a slice of random uint8s between min and max, inclusive. If m
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1895,8 +1937,9 @@ Uint8SliceUnique returns a slice of unique random uint8s between min and max, in
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1935,8 +1978,9 @@ UintSlice returns a slice of random uints between min and max, inclusive. If min
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
@@ -1975,8 +2019,9 @@ UintSliceUnique returns a slice of unique random uints between min and max, incl
 package main
 
 import (
-	"atomicgo.dev/random"
 	"fmt"
+
+	"atomicgo.dev/random"
 )
 
 func main() {
