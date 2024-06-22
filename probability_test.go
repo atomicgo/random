@@ -3,8 +3,6 @@ package random_test
 import (
 	"fmt"
 
-	"fmt"
-
 	"atomicgo.dev/random"
 )
 
