@@ -31,7 +31,11 @@ func isUnique[T comparable](s []T) bool {
 }
 
 func TestIsUniqueHelper(t *testing.T) {
+	t.Parallel()
+
 	t.Run("unique", func(t *testing.T) {
+		t.Parallel()
+
 		s := []int{1, 2, 3, 4, 5, 6}
 		if !isUnique(s) {
 			t.Errorf("Expected %v to be unique", s)
@@ -39,6 +43,8 @@ func TestIsUniqueHelper(t *testing.T) {
 	})
 
 	t.Run("not unique", func(t *testing.T) {
+		t.Parallel()
+
 		s := []int{1, 2, 3, 4, 5, 6, 1}
 		if isUnique(s) {
 			t.Errorf("Expected %v to not be unique", s)

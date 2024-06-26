@@ -1,7 +1,7 @@
 package random
 
 // Entry returns a random element from a slice.
-func Entry[T any](s []T) T {
+func Entry[T any](s []T) T { //nolint: ireturn // generic function
 	return s[Int(0, len(s)-1)]
 }
 
@@ -45,5 +45,6 @@ func EntriesUnique[T any](s []T, n int) []T {
 // Shuffle returns a shuffled copy of a slice.
 func Shuffle[T any](s []T) []T {
 	r.Shuffle(len(s), func(i, j int) { s[i], s[j] = s[j], s[i] })
+
 	return s
 }

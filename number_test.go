@@ -28,6 +28,8 @@ func ExampleIntSlice() {
 }
 
 func TestIntSliceUnique(t *testing.T) {
+	t.Parallel()
+
 	random.Seed(1337)
 
 	s := random.IntSliceUnique(1, 100, 10)
@@ -76,6 +78,8 @@ func ExampleUintSlice() {
 }
 
 func TestUintSliceUnique(t *testing.T) {
+	t.Parallel()
+
 	random.Seed(1337)
 
 	s := random.UintSliceUnique(1, 100, 10)
@@ -124,6 +128,8 @@ func ExampleUint8Slice() {
 }
 
 func TestUint8SliceUnique(t *testing.T) {
+	t.Parallel()
+
 	random.Seed(1337)
 
 	s := random.Uint8SliceUnique(1, 100, 10)
@@ -172,6 +178,8 @@ func ExampleUint16Slice() {
 }
 
 func TestUint16SliceUnique(t *testing.T) {
+	t.Parallel()
+
 	random.Seed(1337)
 
 	s := random.Uint16SliceUnique(1, 100, 10)
@@ -220,6 +228,8 @@ func ExampleUint32Slice() {
 }
 
 func TestUint32SliceUnique(t *testing.T) {
+	t.Parallel()
+
 	random.Seed(1337)
 
 	s := random.Uint32SliceUnique(1, 100, 10)
@@ -268,6 +278,8 @@ func ExampleUint64Slice() {
 }
 
 func TestUint64SliceUnique(t *testing.T) {
+	t.Parallel()
+
 	random.Seed(1337)
 
 	s := random.Uint64SliceUnique(1, 100, 10)
@@ -316,6 +328,8 @@ func ExampleInt8Slice() {
 }
 
 func TestInt8SliceUnique(t *testing.T) {
+	t.Parallel()
+
 	random.Seed(1337)
 
 	s := random.Int8SliceUnique(1, 100, 10)
@@ -364,6 +378,8 @@ func ExampleInt16Slice() {
 }
 
 func TestInt16SliceUnique(t *testing.T) {
+	t.Parallel()
+
 	random.Seed(1337)
 
 	s := random.Int16SliceUnique(1, 100, 10)
@@ -412,6 +428,8 @@ func ExampleInt32Slice() {
 }
 
 func TestInt32SliceUnique(t *testing.T) {
+	t.Parallel()
+
 	random.Seed(1337)
 
 	s := random.Int32SliceUnique(1, 100, 10)
@@ -460,6 +478,8 @@ func ExampleInt64Slice() {
 }
 
 func TestInt64SliceUnique(t *testing.T) {
+	t.Parallel()
+
 	random.Seed(1337)
 
 	s := random.Int64SliceUnique(1, 100, 10)
@@ -508,6 +528,8 @@ func ExampleFloat32Slice() {
 }
 
 func TestFloat32SliceUnique(t *testing.T) {
+	t.Parallel()
+
 	random.Seed(1337)
 
 	s := random.Float32SliceUnique(1, 100, 10)
@@ -550,6 +572,8 @@ func ExampleFloat64Slice() {
 }
 
 func TestFloat64SliceUnique(t *testing.T) {
+	t.Parallel()
+
 	random.Seed(1337)
 
 	s := random.Float64SliceUnique(1, 100, 10)

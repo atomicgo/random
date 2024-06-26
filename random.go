@@ -4,7 +4,7 @@ import (
 	"math/rand"
 )
 
-var r *rand.Rand
+var r *rand.Rand //nolint: gochecknoglobals, varnamelen // Global random generator
 
 func init() {
 	r = rand.New(rand.NewSource(rand.Int63())) //nolint:all // Unsecure random is fine for this package
