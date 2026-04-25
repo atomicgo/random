@@ -123,7 +123,7 @@ func ExampleUint8Slice() {
 
 	s := random.Uint8Slice(1, 100, 10)
 
-	fmt.Println(s)
+	fmt.Println(string(s))
 	// Output: [77 58 99 3 33 97 89 43 68 100]
 }
 
@@ -154,7 +154,7 @@ func ExampleUint8SliceUnique() {
 
 	s := random.Uint8SliceUnique(1, 100, 10)
 
-	fmt.Println(s)
+	fmt.Println(string(s))
 	// Output: [77 58 99 3 33 97 89 43 68 100]
 }
 
