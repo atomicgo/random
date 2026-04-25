@@ -11,8 +11,8 @@ import (
 func ExampleInt() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	min, max := 0, math.MaxInt
-	res := random.Int(min, max)
+	minimum, maximum := 0, math.MaxInt
+	res := random.Int(minimum, maximum)
 
 	fmt.Println(res)
 	// Output: 5799089487994996006
@@ -61,8 +61,8 @@ func ExampleIntSliceUnique() {
 func ExampleUint() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	var min, max uint = 0, math.MaxUint
-	res := random.Uint(min, max)
+	var minimum, maximum uint = 0, math.MaxUint
+	res := random.Uint(minimum, maximum)
 
 	fmt.Println(res)
 	// Output: 15022461524849771814
@@ -111,8 +111,8 @@ func ExampleUintSliceUnique() {
 func ExampleUint8() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	var min, max uint8 = 0, math.MaxUint8
-	res := random.Uint8(min, max)
+	var minimum, maximum uint8 = 0, math.MaxUint8
+	res := random.Uint8(minimum, maximum)
 
 	fmt.Println(res)
 	// Output: 84
@@ -161,8 +161,8 @@ func ExampleUint8SliceUnique() {
 func ExampleUint16() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	var min, max uint16 = 0, math.MaxUint16
-	res := random.Uint16(min, max)
+	var minimum, maximum uint16 = 0, math.MaxUint16
+	res := random.Uint16(minimum, maximum)
 
 	fmt.Println(res)
 	// Output: 596
@@ -211,8 +211,8 @@ func ExampleUint16SliceUnique() {
 func ExampleUint32() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	var min, max uint32 = 0, math.MaxUint32
-	res := random.Uint32(min, max)
+	var minimum, maximum uint32 = 0, math.MaxUint32
+	res := random.Uint32(minimum, maximum)
 
 	fmt.Println(res)
 	// Output: 2700411476
@@ -261,8 +261,8 @@ func ExampleUint32SliceUnique() {
 func ExampleUint64() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	var min, max uint64 = 0, math.MaxUint64
-	res := random.Uint64(min, max)
+	var minimum, maximum uint64 = 0, math.MaxUint64
+	res := random.Uint64(minimum, maximum)
 
 	fmt.Println(res)
 	// Output: 15022461524849771814
@@ -311,8 +311,8 @@ func ExampleUint64SliceUnique() {
 func ExampleInt8() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	var min, max int8 = 0, math.MaxInt8
-	res := random.Int8(min, max)
+	var minimum, maximum int8 = 0, math.MaxInt8
+	res := random.Int8(minimum, maximum)
 
 	fmt.Println(res)
 	// Output: 42
@@ -361,8 +361,8 @@ func ExampleInt8SliceUnique() {
 func ExampleInt16() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	var min, max int16 = 0, math.MaxInt16
-	res := random.Int16(min, max)
+	var minimum, maximum int16 = 0, math.MaxInt16
+	res := random.Int16(minimum, maximum)
 
 	fmt.Println(res)
 	// Output: 298
@@ -411,8 +411,8 @@ func ExampleInt16SliceUnique() {
 func ExampleInt32() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	var min, max int32 = 0, math.MaxInt32
-	res := random.Int32(min, max)
+	var minimum, maximum int32 = 0, math.MaxInt32
+	res := random.Int32(minimum, maximum)
 
 	fmt.Println(res)
 	// Output: 1350205738
@@ -461,8 +461,8 @@ func ExampleInt32SliceUnique() {
 func ExampleInt64() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	var min, max int64 = 0, math.MaxInt64
-	res := random.Int64(min, max)
+	var minimum, maximum int64 = 0, math.MaxInt64
+	res := random.Int64(minimum, maximum)
 
 	fmt.Println(res)
 	// Output: 5799089487994996006
@@ -511,8 +511,8 @@ func ExampleInt64SliceUnique() {
 func ExampleFloat32() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	var min, max float32 = 0, math.MaxFloat32
-	res := random.Float32(min, max)
+	var minimum, maximum float32 = 0, math.MaxFloat32
+	res := random.Float32(minimum, maximum)
 
 	fmt.Println(res)
 	// Output: 0.6287385
@@ -555,8 +555,8 @@ func ExampleFloat32SliceUnique() {
 func ExampleFloat64() {
 	random.Seed(1337) // Set seed for deterministic output, not required
 
-	var min, max float64 = 0, math.MaxFloat64
-	res := random.Float64(min, max)
+	var minimum, maximum float64 = 0, math.MaxFloat64
+	res := random.Float64(minimum, maximum)
 
 	fmt.Println(res)
 	// Output: 0.6287385421322026
